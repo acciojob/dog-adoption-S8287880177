@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Breeds</title>
+    <style>
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            display: flex;
+            gap: 20px; /* Space between items */
+            padding: 0;
+        }
+
+        li {
+            text-align: center;
+        }
+
+        img {
+            width: 200px; /* Set image width */
+            height: auto;
+            border-radius: 10px; /* Rounded corners */
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+    </style>
 </head>
 <body>
-
-    <h2>Dog Breeds</h2>
-
+    <h1>Dog Breeds</h1>
     <ul>
         <li>
             <a href="https://en.wikipedia.org/wiki/Golden_Retriever" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Golden_Retriever_Carlos_%2810581910556%29.jpg" 
-                     alt="Golden Retriever" width="250">
+                <img src="https://images.dog.ceo/breeds/retriever-golden/n02099601_3004.jpg" alt="Golden Retriever">
             </a>
         </li>
-
         <li>
             <a href="https://en.wikipedia.org/wiki/Poodle" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Poodle_stand.jpg" 
-                     alt="Poodle" width="250">
+                <img src="https://images.dog.ceo/breeds/poodle-standard/n02113799_5022.jpg" alt="Poodle">
             </a>
         </li>
     </ul>
-
 </body>
 </html>
